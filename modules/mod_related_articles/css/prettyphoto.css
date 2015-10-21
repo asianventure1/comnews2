@@ -1,0 +1,106 @@
+.flexslider {
+    position:relative;
+    border:none;
+    border-radius:0;
+    box-shadow:none;
+}
+
+h3.flex_slider {
+    text-align: center;
+    height:20px
+}
+
+.flex_slider_col1 {
+    padding-left:-10px;
+    padding-right: 0;
+}
+
+.flex_slider_col2 {
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 568px) {
+    h3.flex_slider {
+        font-size: 17px;
+        margin: 0;
+        padding: 0 0 ;
+    }
+
+    .flex_slider_col2 {
+        margin: -10px 0 0 10px;
+        padding: 0;
+    }
+ }
+
+p.flex_slider {
+    text-align: center;
+    color: #006666;
+    height:15px;
+    line-height:15px;
+    font-size: 14px;
+    font-weight: bold
+}
+
+.flexslider .slides > li {
+    position: relative;
+}
+
+.flex-control-nav{display:none;}
+.flex-direction-nav a {
+    background: url("../js/slider_relatednews/images/arrows1.png") no-repeat 0 0 transparent;
+    cursor: pointer;
+    display: block;
+    height:26px;
+    width: 30px;
+    position: absolute;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    z-index: 10;
+}
+.flex-direction-nav .flex-prev{background-position: 0 0;left:0;top:25%;}
+.flexslider:hover .flex-prev{left:0;}
+.flex-direction-nav .flex-next{background-position: -30px 0;right:0;top:25%;}
+.flexslider:hover .flex-next{ right:0;}
+
+.col4_img{
+    position:relative;
+    overflow:hidden;
+}
+
+@media (max-width: 767px) {
+
+    .flex-direction-nav .flex-prev{left:45%;}
+    .flexslider:hover .flex-prev{left:45%;}
+    .flex-direction-nav .flex-next{left:55%;}
+    .flexslider:hover .flex-next{ left:55%;}
+    p.flex_slider {
+        display: none}
+    h3.flex_slider {
+        margin: 0 0 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .flex-direction-nav a {
+        background: url("../js/slider_relatednews/images/arrows1.png") no-repeat 0 0 transparent;
+        height:26px;
+        width: 30px;
+    }
+    .flex-direction-nav .flex-prev{
+        background-position: 0 0;
+        left:77%;
+        top:15px}
+    .flexslider:hover .flex-prev{
+        left:77%;
+    }
+    .flex-direction-nav .flex-next{
+        background-position:-30px 0;
+        left:89%;top:15px}
+    .flexslider:hover .flex-next{
+        left:89%;}
+    .col4_img {
+        margin-top: 15px}
+
+}

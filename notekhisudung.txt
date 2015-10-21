@@ -1,0 +1,25 @@
+1. sau khi cai dat xong nen them cac ham su dung chung nhu sau
+Libraries -> joomla -> string.php 
+
+them ham subtring cat nho noi dung text nhu sau
+
+ public static function sub_string($str, $len, $more = '...', $encode = 'utf-8')
+    {
+        if ($str == "" || $str == NULL || is_array($str) || strlen($str) <= $len) {
+            return $str;
+        }
+        $str = mb_substr($str, 0, $len, $encode);
+        if ($str != "") {
+            if (!substr_count($str, " ")) {
+                $str .= $more;
+                return $str;
+            }
+            while (strlen($str) && ($str[strlen($str) - 1] != " ")) {
+                $str = mb_substr($str, 0, -1, $encode);
+            }
+            $str = mb_substr($str, 0, -1, $encode);
+            $str .= $more;
+        }
+        $str = preg_replace("/[[:blank:]]+/", " ", $str);
+        return $str;
+    }

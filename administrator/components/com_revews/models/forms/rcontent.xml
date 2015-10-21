@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+       <field name="id" type="text" default="0" label="COM_REVEWS_FORM_LBL_RCONTENT_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="date" type="calendar" class="inputbox"
+            default="0000-00-00"
+            label="COM_REVEWS_FORM_LBL_RCONTENT_DATE"
+            description="COM_REVEWS_FORM_DESC_RCONTENT_DATE" 
+        filter="safehtml" /> 
+
+       <field name="name" type="text" size="40" class="inputbox"
+            label="COM_REVEWS_FORM_LBL_RCONTENT_NAME"
+            description="COM_REVEWS_FORM_DESC_RCONTENT_NAME" 
+            required="true"
+            filter="safehtml" />
+
+       <field name="email" type="text" size="40" class="inputbox"
+            label="COM_REVEWS_FORM_LBL_RCONTENT_EMAIL"
+            description="COM_REVEWS_FORM_DESC_RCONTENT_EMAIL" 
+            required="true"
+            filter="safehtml" />
+
+       <field name="country" type="text" size="40" class="inputbox"
+            label="COM_REVEWS_FORM_LBL_RCONTENT_COUNTRY"
+            description="COM_REVEWS_FORM_DESC_RCONTENT_COUNTRY" 
+            filter="safehtml" />
+
+       <field name="userphoto" type="media"
+            label="COM_REVEWS_FORM_LBL_RCONTENT_USERPHOTO"
+            description="COM_REVEWS_FORM_DESC_RCONTENT_USERPHOTO" 
+            directory="/images/" />
+
+       <field name="vote" type="text" size="40" class="inputbox"
+               label="COM_REVEWS_FORM_LBL_RCONTENT_VOTE"
+               description="COM_REVEWS_FORM_DESC_RCONTENT_VOTE"
+               filter="safehtml" />
+
+       <field name="reviewtext" type="editor" buttons="true"
+            class="inputbox"
+            filter="safehtml"
+            required="true"
+            label="COM_REVEWS_FORM_LBL_RCONTENT_REVIEWTEXT"
+            description="COM_REVEWS_FORM_DESC_RCONTENT_REVIEWTEXT"  /> 
+
+       <field
+            name="state"
+            type="list"
+            label="JSTATUS"
+            description="JFIELD_PUBLISHED_DESC"
+            class="inputbox"
+            size="1"
+            default="1">
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+        <option value="2">JARCHIVED</option>
+        <option value="-2">JTRASHED</option>
+    </field>
+
+	</fieldset>
+
+</form>

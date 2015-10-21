@@ -350,3 +350,27 @@ p { text-align: justify;}
 }
 
 /* end header index */
+
+/*user comment trong artcles*/
+.avatar {
+    float: left;
+}
+.avatar img {
+    height: 48px;
+    width: 48px;
+}
+.avatar .user {
+    background: rgba(0, 39, 59, 0.2) none repeat scroll 0 0;
+    position: relative;
+    z-index: 100;
+}
+.avatar .user, .avatar img {
+    border-radius: 3px;
+    display: block;
+}
+
+/*huyen viet them de hidden*/
+
+#layout #footer {
+    display: none!important;
+}

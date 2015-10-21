@@ -155,15 +155,11 @@ JHtml::_('behavior.caption');
         <?php endif; ?>
     <?php endif; ?>
 
-<div style="margin-top:-5px; margin-bottom: 40px; border: 1px solid #cccccc; background: #f5f5f5" >
-    <div style="float: left">
-        <img src="images/noneuser.png" style="width: 50px">
-    </div>
-    <div style="">
-        <p>user name</p>
-        <p>Vae.Cum abactus potus, omnes imberes transferre nobilis, gratis tataes.</p>
-    </div>
-</div>
+    <?php
+    $module = JModuleHelper::getModule( 'mod_fake_reviews ', 'fake reviews' );
+    echo JModuleHelper::renderModule( $module );
+    ?>
+
     <h4>related articles</h4>
 
     <?php
